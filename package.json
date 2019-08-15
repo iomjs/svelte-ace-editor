@@ -1,0 +1,35 @@
+{
+  "name": "svelte-ace-editor",
+  "description": "A Svelte3 component based on ace/brace",
+  "version": "0.0.1",
+  "author": "IOM <npm@greatenemy.com> (https://github.com/GreatEnemy)",
+  "svelte": "src/index.svelte",
+  "module": "index.mjs",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/GreatEnemy/svelte-ace-editor/issues"
+  },
+  "homepage": "https://github.com/GreatEnemy/svelte-ace-editor#readme",
+  "devDependencies": {
+    "rollup": "^1.11.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-svelte": "^5.0.0",
+    "svelte": "^3.0.0"
+  },
+  "keywords": [
+    "svelte", "Svelte3", "ace editor"
+  ],
+  "files": [
+    "src",
+    "index.mjs",
+    "index.js"
+  ],
+  "dependencies": {
+    "brace": "^0.11.1"
+  }
+}
