@@ -1,7 +1,7 @@
 {
   "name": "svelte-ace-editor",
   "description": "A Svelte3 component based on ace/brace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "IOM <npm@greatenemy.com> (https://github.com/GreatEnemy)",
   "svelte": "src/index.svelte",
   "module": "index.mjs",
