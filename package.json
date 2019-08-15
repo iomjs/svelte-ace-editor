@@ -22,7 +22,9 @@
     "svelte": "^3.0.0"
   },
   "keywords": [
-    "svelte", "Svelte3", "ace editor"
+    "svelte",
+    "Svelte3",
+    "ace editor"
   ],
   "files": [
     "src",
@@ -31,5 +33,9 @@
   ],
   "dependencies": {
     "brace": "^0.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greatenemy/svelte-ace-editor.git"
   }
 }

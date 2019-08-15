@@ -7,7 +7,9 @@ svelte-ace-editor
 
 A packaging of [ace](https://ace.c9.io/)
 
-Demo here: https://github.com/chairuosen/vue-ace-editor-demo/tree/svelte
+Demos:
+- https://sql.greatenemy.com/ https://github.com/greatenemy/sql-sapper
+- https://textsort.greatenemy.com/ https://github.com/greatenemy/textsort-sapper
 
 ## IMPORTANT
 emmet support for html is removed after 0.0.6. because its code cannot works with strict mode.
