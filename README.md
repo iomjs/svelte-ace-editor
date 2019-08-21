@@ -2,7 +2,7 @@ svelte-ace-editor
 ====================
 
 
-[![npm](https://img.shields.io/npm/v/svelte-ace-editor.svg)](https://www.npmjs.com/package/svelte-ace-editor) [![Build status](https://ci.appveyor.com/api/projects/status/gsedbem0kwf0ppng?svg=true)](https://ci.appveyor.com/project/InstanceOfMichael/svelte-ace-editor)
+[![npm](https://img.shields.io/npm/v/svelte-ace-editor.svg)](https://www.npmjs.com/package/svelte-ace-editor) [![Build status](https://ci.appveyor.com/api/projects/status/gsedbem0kwf0ppng?svg=true)](https://ci.appveyor.com/project/InstanceOfMichael/svelte-ace-editor) [![Greenkeeper badge](https://badges.greenkeeper.io/greatenemy/svelte-ace-editor.svg)](https://greenkeeper.io/)
 
 
 A packaging of [ace](https://ace.c9.io/)
