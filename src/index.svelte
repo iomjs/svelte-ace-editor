@@ -3,10 +3,20 @@
   style="width:{width ? px(width) : '100%'};height:{height ? px(height) : '100%'}"
 ></div>
 
+<!--
+	allow access to props like
+	<AceEditor bind:this={editorComponent} />
+	let editorComponent;
+	editorComponent.editor.resize();
+-->
+<svelte:options accessors />
+
 <script>
   import { createEventDispatcher, tick, onMount, onDestroy } from 'svelte';
 
-  const ace = require('brace');
+	import * as ace from 'brace';
+	import 'brace/ext/emmet';
+
   const dispatch = createEventDispatcher();
   /**
    * translation of vue component to svelte:
@@ -20,7 +30,7 @@
   export let options = null; // Object
 
   let element = null; // bind this element to variable
-  let editor = null;
+  export let editor = null;
   let contentBackup = '';
 
   onDestroy(() => {
@@ -59,7 +69,7 @@
     }
   }
 
-  const resizeOnNextTick = () => tick().then(() => {
+  export const resizeOnNextTick = () => tick().then(() => {
     if (editor) {
       editor.resize();
     }
@@ -67,12 +77,10 @@
 
   $: if (height!==null && width!==null) { resizeOnNextTick(); }
 
-  if (process.browser) {
+  if (true) {
     onMount(() => {
       lang = lang || 'text';
       theme = theme || 'chrome';
-
-      require('brace/ext/emmet');
 
       editor = ace.edit(element);
 
